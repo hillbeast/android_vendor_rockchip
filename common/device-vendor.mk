@@ -50,10 +50,6 @@ ifeq ($(PRODUCT_HAVE_GPS), true)
 $(call inherit-product-if-exists, vendor/rockchip/common/gps/gps.mk)
 endif
 
-ifeq ($(PRODUCT_HAVE_ADBLOCK), true)
-$(call inherit-product-if-exists, vendor/rockchip/common/etc/adblock.mk)
-endif
-
 # uncomment the line bellow to enable phone functions
 ifeq ($(PRODUCT_HAVE_RKPHONE_FEATURES), true)
 ifeq ($(strip $(TARGET_ARCH)), x86)
