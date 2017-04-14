@@ -14,10 +14,6 @@
 # limitations under the License.
 #
 
-ifeq ($(PRODUCT_HAVE_RKAPPS), true)
-$(call inherit-product-if-exists, vendor/rockchip/common/apps/apps.mk)
-endif
-
 ifeq ($(strip $(TARGET_BOARD_PLATFORM_GPU)), PVR540)
 $(call inherit-product-if-exists, vendor/rockchip/common/gpu/PVR540.mk)
 endif
