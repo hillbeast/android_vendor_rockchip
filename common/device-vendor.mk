@@ -14,20 +14,8 @@
 # limitations under the License.
 #
 
-ifeq ($(strip $(TARGET_BOARD_PLATFORM_GPU)), PVR540)
-$(call inherit-product-if-exists, vendor/rockchip/common/gpu/PVR540.mk)
-endif
-ifeq ($(strip $(TARGET_BOARD_PLATFORM_GPU)), mali400)
-$(call inherit-product-if-exists, vendor/rockchip/common/gpu/Mali400.mk)
-endif
-ifeq ($(strip $(TARGET_BOARD_PLATFORM_GPU)), mali450)
-$(call inherit-product-if-exists, vendor/rockchip/common/gpu/Mali450.mk)
-endif
 ifeq ($(strip $(TARGET_BOARD_PLATFORM_GPU)), mali-t760)
 $(call inherit-product-if-exists, vendor/rockchip/common/gpu/MaliT760.mk)
-endif
-ifeq ($(strip $(TARGET_BOARD_PLATFORM_GPU)), G6110)
-$(call inherit-product-if-exists, vendor/rockchip/common/gpu/G6110.mk)
 endif
 
 ifeq ($(PRODUCT_HAVE_IPP), true)
