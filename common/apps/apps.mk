@@ -54,13 +54,6 @@ PRODUCT_PACKAGES += \
     RkExplorer
 endif
 
-ifeq ($(strip $(BOARD_HAS_STRESSTEST_APP)), true)
-    PRODUCT_PACKAGES += \
-    StressTest \
-    DeviceTest
-endif
-
-
 ifeq ($(strip $(TARGET_BOARD_PLATFORM)), sofia3gr)
 PRODUCT_PACKAGES += \
     ituxd\
